@@ -10,7 +10,8 @@ PagePal is your AI-powered friend in the browser. Transform any webpage with ins
 
 - 🌍 **Translation** - Translate to Hebrew & 11 languages (unlimited free)
 - 📝 **Smart Summarization** - Get 5-7 bullet point summaries (unlimited free)
-- 💬 **Chat with Pages** - Ask questions about page content (5/day free)
+- 💬 **Chat with Pages** - Ask questions with domain-specific prompts (5/day free)
+- 🎯 **Smart Prompts Library** - Pre-built expert prompts for: Cybersecurity, Real Estate, Legal, Academic, Business, Code, Medical, News (unlimited free)
 - 🛡️ **Phishing Detection** - AI-powered security scanning (3/day free)
 - 🎬 **YouTube Summarization** - Auto-summarize videos with timestamps (3/day free)
 - 📄 **PDF Support** - Full PDF translation, summarization & chat (PRO)
