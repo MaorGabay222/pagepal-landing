@@ -30,6 +30,10 @@ Download the extension: [GitHub Releases](https://github.com/MaorGabay222/pagepa
 
 📧 Email: gabaygabaymaor123@gmail.com
 
+## Analytics
+
+📊 Want to track visitors? See [Analytics Setup Guide](./ANALYTICS_SETUP.md)
+
 ---
 
 **Made with ❤️ for smart browsing**
