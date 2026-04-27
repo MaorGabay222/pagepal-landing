@@ -336,6 +336,65 @@
       font-weight: 600;
     }
 
+    /* Smart Prompts Section */
+    .smart-prompts {
+      padding: 80px 0;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: var(--white);
+    }
+
+    .prompts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 60px;
+    }
+
+    .prompt-card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 16px;
+      padding: 25px;
+      transition: all 0.3s;
+    }
+
+    .prompt-card:hover {
+      background: rgba(255, 255, 255, 0.15);
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .prompt-icon {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+
+    .prompt-card h3 {
+      font-size: 20px;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    .prompt-examples {
+      list-style: none;
+      margin-top: 15px;
+    }
+
+    .prompt-examples li {
+      padding: 8px 0;
+      font-size: 14px;
+      opacity: 0.9;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .prompt-examples li::before {
+      content: "→";
+      flex-shrink: 0;
+    }
+
     /* Pricing Section */
     .pricing {
       padding: 80px 0;
@@ -588,7 +647,7 @@
   <section class="hero">
     <div class="container">
       <h1>Meet Your Smart Browser Companion 🤝</h1>
-      <p>PagePal is your AI-powered friend in the browser. Translate pages instantly, get smart summaries, chat with content, stay safe from phishing, and never miss a detail in YouTube videos.</p>
+      <p>PagePal is your AI-powered friend in the browser. Translate pages instantly, get smart summaries, chat with <strong>domain-specific prompts</strong> (Cybersecurity, Real Estate, Legal, Academic & more), stay safe from phishing, and never miss a detail in YouTube videos.</p>
       <div class="hero-buttons">
         <a href="https://github.com/MaorGabay222/pagepal/releases/latest" class="cta-button">Get Started Free</a>
         <a href="#pricing" class="cta-button secondary">View Pricing</a>
@@ -601,7 +660,7 @@
   <section id="features" class="features">
     <div class="container">
       <h2 class="section-title">Powerful Features at Your Fingertips</h2>
-      <p class="section-subtitle">Everything you need to browse smarter and faster</p>
+      <p class="section-subtitle">Everything you need to browse smarter - including smart prompts for every domain</p>
       
       <div class="features-grid">
         <!-- Feature 1 -->
@@ -624,8 +683,16 @@
         <div class="feature-card">
           <div class="feature-icon">💬</div>
           <h3>Chat with Pages</h3>
-          <p>Ask questions about any webpage. "What's the main argument?" "Explain section 3" - get AI-powered answers based on the page content.</p>
+          <p>Ask questions about any webpage with <strong>smart, domain-specific prompts</strong>. Research? Business? Technical docs? Get AI answers optimized for your field.</p>
           <span class="feature-label label-free">5 PER DAY FREE</span>
+        </div>
+
+        <!-- Feature 3.5 - NEW -->
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h3>Smart Prompts Library</h3>
+          <p>Pre-built prompts for every use case: <strong>Cybersecurity research, Real estate analysis, Legal documents, Academic papers, Business reports, Code documentation</strong> & more. No need to think - just click!</p>
+          <span class="feature-label label-free">UNLIMITED • FREE</span>
         </div>
 
         <!-- Feature 4 -->
@@ -655,6 +722,124 @@
     </div>
   </section>
 
+  <!-- Smart Prompts Section -->
+  <section class="smart-prompts">
+    <div class="container">
+      <h2 class="section-title">🎯 Built-in Smart Prompts for Every Domain</h2>
+      <p class="section-subtitle">No need to think what to ask - we've got you covered with expert prompts</p>
+      
+      <div class="prompts-grid">
+        <!-- Cybersecurity -->
+        <div class="prompt-card">
+          <div class="prompt-icon">🔒</div>
+          <h3>Cybersecurity Research</h3>
+          <p>Specialized prompts for security analysis:</p>
+          <ul class="prompt-examples">
+            <li>"Summarize security vulnerabilities mentioned"</li>
+            <li>"Extract CVE numbers and severity"</li>
+            <li>"What are the recommended mitigations?"</li>
+            <li>"Analyze the attack vector"</li>
+          </ul>
+        </div>
+
+        <!-- Real Estate -->
+        <div class="prompt-card">
+          <div class="prompt-icon">🏠</div>
+          <h3>Real Estate Analysis</h3>
+          <p>Perfect for property research:</p>
+          <ul class="prompt-examples">
+            <li>"Extract key property details"</li>
+            <li>"Summarize neighborhood information"</li>
+            <li>"What are the pros and cons?"</li>
+            <li>"Calculate ROI based on listed price"</li>
+          </ul>
+        </div>
+
+        <!-- Legal Documents -->
+        <div class="prompt-card">
+          <div class="prompt-icon">⚖️</div>
+          <h3>Legal Documents</h3>
+          <p>Navigate contracts & agreements:</p>
+          <ul class="prompt-examples">
+            <li>"Summarize key terms and obligations"</li>
+            <li>"What are my termination rights?"</li>
+            <li>"Extract payment and deadline clauses"</li>
+            <li>"Identify potential risks"</li>
+          </ul>
+        </div>
+
+        <!-- Academic Research -->
+        <div class="prompt-card">
+          <div class="prompt-icon">🎓</div>
+          <h3>Academic Papers</h3>
+          <p>Research & study assistance:</p>
+          <ul class="prompt-examples">
+            <li>"Summarize methodology and findings"</li>
+            <li>"What's the main hypothesis?"</li>
+            <li>"Extract citations and references"</li>
+            <li>"Explain complex concepts simply"</li>
+          </ul>
+        </div>
+
+        <!-- Business Reports -->
+        <div class="prompt-card">
+          <div class="prompt-icon">📊</div>
+          <h3>Business Reports</h3>
+          <p>Financial & market analysis:</p>
+          <ul class="prompt-examples">
+            <li>"Extract key financial metrics"</li>
+            <li>"Summarize market opportunities"</li>
+            <li>"What are the main risks?"</li>
+            <li>"Compare Q1 vs Q2 performance"</li>
+          </ul>
+        </div>
+
+        <!-- Code Documentation -->
+        <div class="prompt-card">
+          <div class="prompt-icon">💻</div>
+          <h3>Technical Documentation</h3>
+          <p>Developer-focused prompts:</p>
+          <ul class="prompt-examples">
+            <li>"Explain the API authentication flow"</li>
+            <li>"Show me code examples"</li>
+            <li>"What are the rate limits?"</li>
+            <li>"List required dependencies"</li>
+          </ul>
+        </div>
+
+        <!-- Medical/Health -->
+        <div class="prompt-card">
+          <div class="prompt-icon">🏥</div>
+          <h3>Medical Research</h3>
+          <p>Health & medical information:</p>
+          <ul class="prompt-examples">
+            <li>"Summarize treatment options"</li>
+            <li>"What are the side effects?"</li>
+            <li>"Extract study results and conclusions"</li>
+            <li>"Explain medical terminology"</li>
+          </ul>
+        </div>
+
+        <!-- News & Current Events -->
+        <div class="prompt-card">
+          <div class="prompt-icon">📰</div>
+          <h3>News & Analysis</h3>
+          <p>Stay informed quickly:</p>
+          <ul class="prompt-examples">
+            <li>"Summarize key facts without opinion"</li>
+            <li>"Who are the main parties involved?"</li>
+            <li>"What happened and when?"</li>
+            <li>"Extract quotes and sources"</li>
+          </ul>
+        </div>
+      </div>
+
+      <p style="margin-top: 50px; font-size: 20px; font-weight: 500; text-align: center;">
+        ✨ All prompts are context-aware and adapt to your content automatically
+      </p>
+    </div>
+  </section>
+
   <!-- Use Cases Section -->
   <section class="use-cases">
     <div class="container">
@@ -664,8 +849,8 @@
       <div class="use-case">
         <h3><span class="use-case-persona">👨‍💻 For Developers:</span></h3>
         <p><strong>Problem:</strong> Reading English documentation takes too long and slows you down.</p>
-        <p><strong>Solution:</strong> Translate docs to your language → Get instant summaries → Ask specific questions. What took 2 hours now takes 15 minutes.</p>
-        <p><strong>Example:</strong> "I need to understand AWS Lambda pricing" → Translate AWS docs → Summarize → Ask "What's the free tier limit?"</p>
+        <p><strong>Solution:</strong> Translate docs to your language → Get instant summaries → Use <strong>Technical Documentation prompts</strong> ("Explain API authentication flow", "Show code examples", "List dependencies"). What took 2 hours now takes 15 minutes.</p>
+        <p><strong>Example:</strong> "I need to understand AWS Lambda pricing" → Translate AWS docs → Summarize → Smart Prompt: "What's the free tier limit?" + "Show me pricing examples"</p>
       </div>
 
       <div class="use-case">
@@ -931,6 +1116,11 @@
       <div class="faq-item">
         <h3>🌍 What languages are supported?</h3>
         <p>PagePal supports translation to/from 12 languages: English, Hebrew, Spanish, French, German, Italian, Portuguese, Russian, Chinese, Japanese, Korean, and Arabic. The UI is primarily in Hebrew and English.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>🎯 What are "Smart Prompts" and how do they work?</h3>
+        <p>Smart Prompts are pre-built, domain-specific questions that automatically adapt to your content. Instead of thinking "what should I ask?", just select your field (Cybersecurity, Real Estate, Legal, Academic, Business, Code, Medical, News) and click. PagePal asks expert-level questions optimized for that domain. For example: on a security blog → "Extract CVE numbers and severity", on a property listing → "Calculate ROI based on price", on a contract → "What are my termination rights?". It's like having a domain expert helping you read!</p>
       </div>
 
       <div class="faq-item">
